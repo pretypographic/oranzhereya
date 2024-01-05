@@ -1,6 +1,6 @@
-export function PublicationSection({ publication, index }) {
+export function PublicationSection({ publication }) {
   return (
-    <section className="publication-section" key={index}>
+    <section className="publication-section">
       <h2 className="publication-section__title">{publication.date}</h2>
       {
         publication.epigraph && publication.epigraph.map((string, index) => (

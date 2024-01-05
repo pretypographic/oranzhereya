@@ -1,9 +1,4 @@
-.publication-section {
-  padding: 1vh 1vw;
-  box-sizing: border-box;
-  border: 3px solid ;
-  border-radius: 10px;
-}
+/* .publication-section {} */
 
 .publication-section__title {
   padding-left: 1vw;
@@ -13,7 +8,7 @@
 .publication-section__epigraph {
   margin: 3px;
   padding: 3px;
-  background-color: #20242c;
+  background-color: var(--accent-color);
   text-align: end;
   font-size: 0.9rem;
   font-style: italic;

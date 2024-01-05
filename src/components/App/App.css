@@ -1,3 +1,12 @@
+:root {
+  --primary-color: #FDF2DF;
+  --secondary-color: #7A7363;
+  --background-color: #000;
+  --decor-color: #303E3B;
+  --accent-color: #B47E2B;
+  --text-color: #000;
+}
+
 html {
   font-size: 20px;
 }
@@ -7,9 +16,15 @@ h1, h2, p, blockquote {
 }
 
 .app {
-  color: rgb(140, 212, 188);
+  color: var(--text-color);
   min-height: 100vh;
-  padding: 2vh 2vw;
-  box-sizing: border-box;
-  background-color: #0e0f13;
+  min-width: 100%;
+  background-color: var(--background-color);
+  display: grid;
+  grid-template-columns: 15% 30% auto;
+  grid-template-rows: 15% 80% 5%;
+  grid-template-areas: 
+    "header decoration content"
+    "menu decoration content"
+    "footer decoration content";
 }

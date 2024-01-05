@@ -1,9 +1,13 @@
 .header {
-  padding-bottom: 2vh;
+  grid-area: header;
+  border-radius: 50%;
+  background: linear-gradient(var(--secondary-color), var(--background-color));
   display: flex;
-  opacity: 0.7;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__title {
+  color: var(--decor-color);
   font-size: 1rem;
 }

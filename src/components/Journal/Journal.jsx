@@ -5,7 +5,7 @@ export function Journal({ journal }) {
     <main className="journal">
       {
         journal.map((publication, index) => (
-          <PublicationSection publication={publication} index={index} />
+          <PublicationSection publication={publication} key={index} />
         ))
       }
     </main>
