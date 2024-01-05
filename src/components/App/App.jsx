@@ -1,21 +1,17 @@
 import './App.css';
+import { journal } from "../../utils/journal";
+import { constants } from "../../utils/constants";
+
+import { Header } from "../Header/Header";
+import { Journal } from "../Journal/Journal";
 
 export function App() {
+  const { title } = constants;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Header title={title} />
+      <Journal journal={journal} />
     </div>
   );
 }
