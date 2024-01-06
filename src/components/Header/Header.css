@@ -1,13 +1,17 @@
 .header {
   grid-area: header;
+  height: 14vh;
+  width: 14vh;
+  margin: 1vh;
   border-radius: 50%;
-  background: linear-gradient(var(--secondary-color), var(--background-color));
+  background: linear-gradient(var(--secondary-color), var(--shadow-color));
   display: flex;
   justify-content: center;
   align-items: center;
+  filter: url("../../images/grainy_filter.svg#grain");
 }
 
 .header__title {
-  color: var(--decor-color);
+  color: var(--text-color);
   font-size: 1rem;
 }

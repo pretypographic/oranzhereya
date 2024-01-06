@@ -1,0 +1,10 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="height:0;width:0;position:absolute;">
+    <defs>
+        <filter id="grain" x="0%" y="0%" width="100%" height="100%">
+            <feTurbulence baseFrequency="0.8" result="noise" numOctaves="1" />
+            <feComposite in="noise" in2="SourceGraphic" operator="in" result="monoNoise" />
+            <feBlend in="monoNoise" in2="SourceGraphic" mode="multiply" />
+        </filter>
+    </defs>
+</svg>
