@@ -24,7 +24,7 @@ h1, h2, p, blockquote {
   display: grid;
   grid-template-columns: 15% 30% auto;
   grid-template-rows: 15% 80% 5%;
-  grid-template-areas: 
+  grid-template-areas:
     "header decoration content"
     "menu decoration content"
     "footer decoration content";
